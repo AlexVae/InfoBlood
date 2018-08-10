@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Inicio de sesión</title>
+<link href="css/index.css" rel="stylesheet">
+<script src="js/jquery-3.1.0.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/dx.spa.css"/>
+<link rel="stylesheet" type="text/css" href="css/dx.common.css"/>
+<link rel="stylesheet" type="text/css" href="css/dx.light.css"/>
+<script src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/index/index.js"></script>
+<script type="text/javascript" src="js/DataProvider.js"></script>
+<script type="text/javascript" src="js/dx.all.js"></script>
+<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+</head>
+
+<body style="background: #FF8000; 
+  background: -webkit-linear-gradient(right, #FF8000, #8DC26F);
+  background: -moz-linear-gradient(right, #FF8000, #8DC26F);
+  background: -o-linear-gradient(right, #FF8000, #8DC26F);
+  background: linear-gradient(to left, #FF8000, #8DC26F);
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;      " ng-app="RegistroApp" ng-controller="RegistroController">
+	
+	<div class="login-page">
+  <div class="form" ng-app="RegistroApp" ng-controller="RegistroController">
+    <form class="register-form" action="your-action" ng-submit="onFormSubmit($event)">
+		<div class="widget-container">
+                <div id="form" dx-form="formOptions"></div>
+            </div>
+      <input type="text" placeholder="name"/>
+      <input type="password" placeholder="password"/>
+      <input type="text" placeholder="email address"/>
+      <button>create</button>
+      <p class="message">Already registered? <a href="#">Sign In</a></p>
+    </form>
+    <form class="login-form" action="your-action" ng-submit="onFormSubmit($event)">
+		<div class="widget-container">
+                <div id="form" dx-form="formOptions"></div>
+            </div>
+     <!-- <input type="text" placeholder="username"/>
+      <input type="password" placeholder="password"/>-->
+	 <div dx-button="SfButtonCreate" class="SfButtonCreate"></div>
+     
+<p id="demo"></p>
+
+
+      <p class="message">¿No estás registrado? <a href="#">¡Crea tu cuenta!</a></p>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
